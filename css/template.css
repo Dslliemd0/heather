@@ -1,0 +1,33 @@
+.main-logo {
+    padding: 0 40px;
+}
+
+.nav {
+    justify-content: space-between;
+    width: 90%;
+}
+.nav > li {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #5c2969;
+}
+
+.finder {
+    position: relative;
+    margin: 50px;
+}
+
+.finder form::after {
+    position: absolute;
+    font-family:'FontAwesome';
+    content: "\f002";
+    left: 89%;
+    top: 50%;
+    transform: translateY(-50%);
+}

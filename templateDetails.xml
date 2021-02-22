@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="template" method="upgrade">
+	<name>Heather</name>
+	<creationDate>2021-02-22</creationDate>
+	<author>Arvis Birkovs</author>
+	<authorEmail>arvis.birkovs@balvi.lv</authorEmail>
+	<copyright>Arvis Birkovs 2021</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.2</version>
+	<description>Heather template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>header</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+</extension>
