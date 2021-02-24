@@ -20,15 +20,43 @@
             </div>
             <div class="col-9 d-flex flex-column justify-content-end align-items-end">
 
+                <div class="col-5">
                 <jdoc:include type="modules" name="top" /> 
+                </div>
+
+                <div class="col-11">
+                <jdoc:include type="modules" name="navigation" /> 
+                </div>
+
             </div>
         </div>
         <div class="row">
             <jdoc:include type="modules" name="header" />
         </div>
     </div>
-    <jdoc:include type="component" />
-    <jdoc:include type="modules" name="bottom" />
+    <div class="container-fluid">
+        <div class="row">
+            <jdoc:include type="modules" name="breadcrumb" /> 
+        </div>
+        <div class="row">
+            <jdoc:include type="component" />
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-8">
+                <jdoc:include type="modules" name="bottom-left" />
+            </div>
+            <div class="col-4">
+                <jdoc:include type="modules" name="bottom-right" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <jdoc:include type="modules" name="bottom" />
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

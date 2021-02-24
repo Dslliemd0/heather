@@ -4,7 +4,6 @@
 
 .nav {
     justify-content: space-between;
-    width: 90%;
 }
 .nav > li {
     text-transform: uppercase;
@@ -30,6 +29,7 @@
     padding: 10px 40px 10px 10px;
     border: 1px solid #95928b;
     border-radius: 8px;
+    margin-left: auto;
 }
 
 .finder input:focus {
@@ -63,4 +63,14 @@ input[type="color"]:focus,
   border-color: rgba(91, 47, 130, 0.8);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(91, 47, 130, 0.6);
   outline: 0 none;
+}
+
+[aria-label=Breadcrumbs] {
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #5c2969;
+    color: #fff;
+    padding: 20px;
 }

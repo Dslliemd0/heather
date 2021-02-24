@@ -20,9 +20,9 @@
 		<position>right</position>
 		<position>top</position>
 		<position>header</position>
-		<position>user2</position>
-		<position>user3</position>
-		<position>user4</position>
-		<position>footer</position>
+		<position>navigation</position>
+		<position>bottom-left</position>
+		<position>bottom-right</position>
+		<position>bottom</position>
 	</positions>
 </extension>
