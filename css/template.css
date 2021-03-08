@@ -2,21 +2,6 @@
     padding: 0 40px;
 }
 
-.nav {
-    justify-content: space-between;
-}
-.nav > li {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.2em;
-    margin: 5px 0;
-}
-
-.nav a {
-    text-decoration: none;
-    color: #5c2969;
-}
-
 .finder {
     margin: 50px;
 }
