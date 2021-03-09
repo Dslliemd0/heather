@@ -36,25 +36,29 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row my-5 mx-2">
             <jdoc:include type="modules" name="breadcrumb" /> 
         </div>
-        <div class="row">
-            <jdoc:include type="component" />
+        <div class="container">
+            <div class="row my-5 mx-2">
+                <jdoc:include type="component" />
+            </div>
         </div>
     </div>
     <footer class="container-fluid">
-        <div class="row">
-            <div class="col-8">
-                <jdoc:include type="modules" name="bottom-left" />
+        <div class="container mt-5 pb-0">
+            <div class="row">
+                <div class="col-8">
+                    <jdoc:include type="modules" name="bottom-left" />
+                </div>
+                <div class="col-4">
+                    <jdoc:include type="modules" name="bottom-right" />
+                </div>
             </div>
-            <div class="col-4">
-                <jdoc:include type="modules" name="bottom-right" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <jdoc:include type="modules" name="bottom" />
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <jdoc:include type="modules" name="bottom" />
+                </div>
             </div>
         </div>
     </footer>
