@@ -48,10 +48,10 @@
     <footer class="container-fluid">
         <div class="container mt-5 pb-0">
             <div class="row">
-                <div class="col-8">
+                <div class="col-7">
                     <jdoc:include type="modules" name="bottom-left" />
                 </div>
-                <div class="col-4">
+                <div class="col-5">
                     <jdoc:include type="modules" name="bottom-right" />
                 </div>
             </div>

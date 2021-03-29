@@ -106,3 +106,62 @@ footer {
 .breadcrumb .active {
     color: #5c2969;
 }
+
+#subscribe_email {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+#subscribe_email > * {
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+#subscribe_email > *:nth-last-child(3) {
+    margin-right: 0;
+}
+
+#subscribe_email label {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: right; 
+}
+
+#subscribe_email input {
+    width: 220px;
+    padding: 5px;
+    padding-right: 110px;
+}
+
+#subscribe_email .invalid-email {
+    box-shadow: 0 1px 1px rgb(0, 0, 0) inset, 0 0 8px rgb(223, 42, 42);
+}
+
+#subscribe_email .control-group {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    margin: 0;
+}
+
+#subscribe_email .login-button {
+    background-color: #5c2969;
+    border: none;
+    width: 100px;
+    margin: 5px;
+    padding: 0;
+}
+
+#results {
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+#results .error {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
