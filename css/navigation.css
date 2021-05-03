@@ -1,11 +1,29 @@
 .nav {
     justify-content: space-between;
 }
+
+.navbar .navbar-inner {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background-color: #fff;
+    background-image: none;
+    padding: 0;
+    margin: 15px;
+}
 .nav > li {
     position: relative;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.2em;
+}
+
+.navbar .nav > .active >a , .navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+    color: #FFF;
+    background-color: #5c2969;
+    text-shadow: none;
 }
 
 .nav a {
@@ -20,8 +38,11 @@
     position: absolute;
     top: 100%;
     padding: 0;
+    width: 120%;
     z-index: 999;
     list-style-type: none;
+    border: 1px solid rgba(91, 47, 130, 0.4);
+    box-shadow: 2px 3px 2px rgba(91, 47, 130, 0.4);
 }
 
 .deeper:hover .nav-child {
@@ -30,7 +51,6 @@
 
 .nav-child > li {
     font-size: .9em;
-    width: 120%;
     background-color: #fff;
 }
 

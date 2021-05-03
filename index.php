@@ -5,31 +5,40 @@
 
 <head>
     <jdoc:include type="head" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/bootstrap-responsive.min.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/navigation.css" type="text/css" />
+
+    <?php JHtml::_('bootstrap.framework'); ?>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-3">
+        <div class="row-fluid">
+            <div class="span3">
                 <a href="<?php echo $this->baseurl; ?>">
-                    <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/logo_kac.png" alt="KAC logo" class="main-logo img-fluid my-4 shadow-none" />
+                    <img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/logo_kac.png" alt="KAC logo" class="main-logo" />
                 </a>
             </div>
-            <div class="col-9 d-flex flex-column justify-content-end align-items-end">
+            <div class="span9">
 
-                <div class="col-5">
+                <div class="span6 offset6">
                 <jdoc:include type="modules" name="top" /> 
                 </div>
 
-                <div class="col-11">
-                <jdoc:include type="modules" name="navigation" /> 
+            </div>
+            <div class="span9 offset3">
+
+                <div class="navbar navbar-static-top pull-right">
+                    <div class="navbar-inner">
+                        <jdoc:include type="modules" name="navigation" />
+                    </div>
                 </div>
 
-            </div>
+
+                </div>
         </div>
         <div class="row">
             <jdoc:include type="modules" name="header" />
@@ -46,17 +55,23 @@
         </div>
     </div>
     <footer class="container-fluid">
-        <div class="container mt-5 pb-0">
+        <div class="container">
             <div class="row">
-                <div class="col-7">
-                    <jdoc:include type="modules" name="bottom-left" />
-                </div>
-                <div class="col-5">
+                <div class="span6 offset6">
                     <jdoc:include type="modules" name="bottom-right" />
                 </div>
             </div>
+            <div class="row no-space">
+                <div class="span6">
+                    <jdoc:include type="modules" name="subbottom-left" />
+                </div>
+                <div class="span6">
+                    <jdoc:include type="modules" name="subbottom-right" />
+                </div>
+            </div>
+
             <div class="row">
-                <div class="col-12 mt-5">
+                <div class="span12 copyrights">
                     <jdoc:include type="modules" name="bottom" />
                 </div>
             </div>

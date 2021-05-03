@@ -13,6 +13,7 @@
 		<filename>templateDetails.xml</filename>
 		<folder>images</folder>
 		<folder>css</folder>
+		<folder>js</folder>
 	</files>
 	<positions>
 		<position>breadcrumb</position>
@@ -21,8 +22,9 @@
 		<position>top</position>
 		<position>header</position>
 		<position>navigation</position>
-		<position>bottom-left</position>
 		<position>bottom-right</position>
+		<position>subbottom-left</position>
+		<position>subbottom-right</position>
 		<position>bottom</position>
 	</positions>
 </extension>
